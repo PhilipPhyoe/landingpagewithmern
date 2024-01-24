@@ -1,0 +1,179 @@
+.home-hero-container {
+    background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),  url("/images/5079.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-hero-title {
+    font-size: 3.5rem;
+    padding: 0rem  1.2rem 1.2rem 1.2rem;
+}
+.home-hero-text {
+    font-size: 2rem;
+    padding: 0rem  1.2rem 1.2rem 1.2rem;
+}
+/*services*/
+.services{
+    background-color: #fef4ea;
+}
+.service-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.cards{
+    padding: 3rem;
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+/*About Us*/
+.about {
+    height: auto;
+    width: 100%;
+    padding: 3rem 5rem 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+.message {
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+.ceo {
+    margin-left: 2rem;
+}
+.ceo-img {
+    width: 600px;
+    height: auto;
+}
+.quote {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.one-line {
+    width: 30%;
+    float: left;
+    margin-bottom: 1rem;
+    border: 2px solid #ff5c35;
+}
+.name {
+    font-size: 2.5rem;
+    font-weight:300;
+    text-align: right;
+    padding-right: 2rem;
+}
+.role {
+    font-size: 2rem;
+    font-weight:600;
+    text-align: right;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+.message-text, .message-text-2 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+/*counters*/
+.counters{
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1025px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .ceo{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card {
+        margin-top: 2rem;
+    }
+    .home-hero-container{
+        height: 60vh;
+    }
+    .home-hero-title{
+        font-size: 3rem;
+    }
+    .home-hero-text{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 900px){
+    .home-hero-title{
+        font-size: 2.8rem;
+    }
+    .home-hero-text{
+        font-size: 1.5rem;
+    }
+    .services h2{
+        font-size: 1.7rem;
+    }
+    .ceo-img {
+        width: 400px;
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    .ceo-img {
+        width: 350px;
+        height: auto;
+    }
+    .quote {
+        font-size: 1.8rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .role {
+        font-size: 1.2rem;
+    }
+    .message-text, .message-text-2 {
+        font-size: 1rem;
+    }
+    .one-line{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    .home-hero-title{
+        font-size: 2rem;
+    }
+    .home-hero-text{
+        font-size: 1rem;
+    }
+    .home-hero-container{
+        height: 50vh;
+    }
+    .ceo-img {
+        width: 250px;
+        height: auto;
+    }
+    .message-text, .message-text-2 {
+        display: none;
+    }
+}

@@ -1,0 +1,149 @@
+.about-hero-container {
+    background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),  url("/images/toyota-alphard-4k-2018-cars-vans-executive-lounge.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-hero-title {
+    font-size: 3.5rem;
+    padding: 0rem  1.2rem 1.2rem 1.2rem;
+}
+.about-hero-text {
+    font-size: 2rem;
+    padding: 0rem  1.2rem 1.2rem 1.2rem;
+}
+/*services*/
+.services{
+    background-color: #fef4ea;
+}
+.service-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.cards{
+    padding: 3rem;
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+/*About Us*/
+.about-about {
+    height: auto;
+    width: 100%;
+    padding: 3rem 15rem 3rem 15rem;
+    
+    background-color: #ccc;
+}
+.about-title{
+    font-size: 1.5rem;
+    
+}
+.about-message-text, .about-message-text-2 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+/*counters*/
+.counters{
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1400px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .ceo{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 1025px){
+    
+    .about-about{
+        padding: 3rem 8rem 3rem 8rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card {
+        margin-top: 2rem;
+    }
+    .about-hero-container{
+        height: 60vh;
+    }
+    .hero-title{
+        font-size: 3rem;
+    }
+    .hero-text{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 900px){
+    .about-hero-title{
+        font-size: 2.8rem;
+    }
+    .about-hero-text{
+        font-size: 1.5rem;
+    }
+    .services h2{
+        font-size: 1.7rem;
+    }
+    .ceo-img {
+        width: 400px;
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    .about-about{
+        padding: 1.5rem 4rem 1.5rem 4rem;
+    }
+    .ceo-img {
+        width: 350px;
+        height: auto;
+    }
+    .quote {
+        font-size: 1.8rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .role {
+        font-size: 1.2rem;
+    }
+    .about-message-text, .about-message-text-2 {
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width: 400px){
+    .about-hero-title{
+        font-size: 2rem;
+    }
+    .about-hero-text{
+        font-size: 1rem;
+    }
+    .about-hero-container{
+        height: 50vh;
+    }
+    .about-about{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+}

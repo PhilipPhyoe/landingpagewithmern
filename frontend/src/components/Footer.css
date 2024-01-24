@@ -1,0 +1,39 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(28, 5, 120);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+}
+.address {
+    margin-top: 2rem;
+    padding-right: 3rem;
+}
+.address p {
+    padding-top: 2rem;
+}
+.footer-social-icon {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .footer{
+        flex-wrap: wrap;
+    }
+    .address{
+        padding-left: 2rem;
+    }
+}
+@media (max-width: 600px){
+    .footer{
+        font-size: 1rem;
+    }
+    
+}
