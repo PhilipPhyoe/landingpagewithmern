@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../components/Form.css";
+import axios from "axios";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -34,10 +35,17 @@ const Form = () => {
       }
       setFinalMessage("All fields are required!");
     } else {
-      console.log(`${name} + ${email} + ${phone}`);
-      setFinalMessage("");
-      var url = "http://localhost/ContactFormControls/formSubmit.php";
-
+      //console.log(`${name} + ${email} + ${phone}`);
+      axios
+        .post("http://localhost:5000/api/visitors", {
+          name: name,
+          email: email,
+          phone: phone,
+        })
+        .then(setFinalMessage("")).then(setSendMessage("Data is sent successfully."));
+/*
+      //var url = "http://localhost/ContactFormControls/formSubmit.php"; //development
+      var url = "server.php"; //deployment
       var Data = {
         name: name,
         email: email,
@@ -55,12 +63,8 @@ const Form = () => {
 
     //setErrors(Validate(values, errors));
 
-    /*
-      axios.post("http://localhost:5000/api/visitors", {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-      });
+    
+      
       
       var url = "http://localhost/ContactFormControls/formSubmit.php";
       var headers = {
