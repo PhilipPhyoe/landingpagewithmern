@@ -8,6 +8,7 @@ const createVisitor = asyncHandler(async (req, res) => {
     throw new Error("Please input all fields.");
   }
 
+  /*
   const newVisitor = new visitor({
     name: name,
     email: email,
@@ -25,5 +26,6 @@ const createVisitor = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error(error.message);
   }
+  */
 });
 export { createVisitor };

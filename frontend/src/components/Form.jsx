@@ -99,6 +99,7 @@ const Form = () => {
           className="input"
           type="text"
           name="name"
+          value={name}
           style={nameError ? { borderColor: "red" } : {}}
           onChange={(e) => {
             setName(e.target.value);
@@ -114,6 +115,7 @@ const Form = () => {
           className="input"
           type="email"
           name="email"
+          value={email}
           style={emailError ? { borderColor: "red" } : {}}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -128,6 +130,7 @@ const Form = () => {
           className="input"
           type="text"
           name="phone"
+          value={phone}
           style={phoneError ? { borderColor: "red" } : {}}
           onChange={(e) => {
             setPhone(e.target.value);
