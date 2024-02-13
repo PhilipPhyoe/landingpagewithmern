@@ -42,8 +42,9 @@ const Form = () => {
           email: email,
           phone: phone,
         })
-        .then(setFinalMessage("")).then(setSendMessage("Data is sent successfully."));
-/*
+        .then(setFinalMessage(""))
+        .then(setSendMessage("Data is sent successfully."));
+      /*
       //var url = "http://localhost/ContactFormControls/formSubmit.php"; //development
       var url = "server.php"; //deployment
       var Data = {
@@ -84,6 +85,7 @@ const Form = () => {
 
       return;
     }*/
+    }
   };
 
   return (
